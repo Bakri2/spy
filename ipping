@@ -1,0 +1,24 @@
+mport os
+import subprocess
+import pyfiglet
+import colorama
+import time
+import sys
+text=pyfiglet.figlet_format ("Ping * IP")
+print (text)
+print ('''\t\033[1;33;40m
+┌══════════════════════════════════════┐
+█                                      █
+█        Bakri SD - Hoot               █
+█                                      █
+█   website : bakri2.blogspot.com      █
+└══════════════════════════════════════┘
+               v.1.0
+        Facebook/Bakrisiddig2
+    <============================>
+
+''')
+print ("\033[1;32;40m [#] Enter Name & ip :")
+i= input()
+subprocess.call("ping "+ i , shell=True)
+          
